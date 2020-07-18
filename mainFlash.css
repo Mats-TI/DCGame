@@ -1,0 +1,246 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	src: url(Media/Merienda_One/MeriendaOne-Regular.ttf);
+	font-family: "meri"
+}
+
+body {
+	background-image: url(Media/gifs/Flash%20Background.gif);
+	background-size: contain;
+
+}
+
+.mainContainer {
+	display: flex;
+}
+
+.mainNav a {
+	color: blue;
+}
+
+.wrapper {
+
+	margin: auto;
+	padding-top: 50px;
+
+
+}
+
+.mainNav {
+	width: 100%;
+	background-color: white;
+	height: 100px;
+	position: fixed;
+	z-index: 999;
+}
+
+.mainNav li {
+	padding-left: 70px;
+}
+
+.sideBar {
+	background-color: black;
+	width: 65px;
+	height: 100px;
+	z-index: 1000;
+	position: fixed;
+
+}
+
+.sideBar img {
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.question1 {
+	font-size: 20px;
+	padding: 50px;
+	margin-top: 10px;
+	color: beige;
+	visibility: visible;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+
+.question1 form input {
+	display: block
+}
+
+.question1 button {
+	width: 20%;
+	height: 20px;
+	position: relative;
+	left: 40%
+}
+
+.question2 {
+	font-size: 20px;
+	padding: 50px;
+	visibility: hidden;
+	color: beige;
+}
+
+.question2 form input {
+	display: block
+}
+
+.question2 button {
+	width: 20%;
+	height: 20px;
+	position: relative;
+	left: 40%
+}
+
+.question3 {
+	font-size: 20px;
+	padding: 50px;
+	visibility: hidden;
+	color: beige;
+}
+
+.question3 form input {
+	display: block
+}
+
+.question3 button {
+	width: 20%;
+	height: 20px;
+	position: relative;
+	left: 40%
+}
+
+.question4 {
+	font-size: 20px;
+	padding: 50px;
+	visibility: hidden;
+	color: beige;
+}
+
+.question4 form input {
+	display: block
+}
+
+.question4 button {
+	width: 20%;
+	height: 20px;
+	position: relative;
+	left: 40%
+}
+
+.question5 {
+	font-size: 20px;
+	padding: 50px;
+	visibility: hidden;
+	color: beige;
+}
+
+.question5 form input {
+	display: block
+}
+
+.question5 button {
+	width: 20%;
+	height: 20px;
+	position: relative;
+	left: 40%
+}
+
+.EndFlash {
+	visibility: hidden;
+	font-size: 25px;
+	color: beige;
+
+
+}
+
+.Victory {
+	width: 300px;
+}
+
+.tryAgainImage {
+	width: 300px;
+}
+
+
+.TA button {
+	position: relative;
+	right: 185px;
+	bottom: 15px;
+
+}
+
+.VI button {
+	position: relative;
+	right: 225px;
+	bottom: 15px;
+	z-index: 1000;
+}
+
+button {
+	font-family: meri;
+	color: yellow;
+	background-color: black;
+}
+
+p {
+	border: solid;
+}
+
+@media only screen and (min-width:790px) {
+	.mainNav {
+		width: 100%;
+		background-color: white;
+		height: 50px;
+		position: fixed;
+		z-index: 999;
+
+	}
+
+	.mainLogo img {
+		display: block;
+		width: 30%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.mainNav li {
+		display: inline-block;
+		padding-left: 50px;
+		line-height: 50px;
+		padding-left: 100px
+	}
+
+	.mainNav a {
+		color: blue;
+
+	}
+
+	body {
+		background-image: url(Media/gifs/Flash%20Background.gif);
+		background-size: cover;
+	}
+
+	.sideBar {
+		background-color: black;
+		width: 65px;
+		height: 50px;
+		z-index: 1000;
+		position: fixed;
+	}
+}
