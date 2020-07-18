@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Green Lantern Quiz</title>
+	<script src="mainGL.js"></script>
+	<link rel="stylesheet" href="mainGL.css">
+</head>
+<nav class="mainNav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Page2ChoosePlayer.html">Choose Another Superhero</a></li>
+		<li><a href="#">How To Play</a></li>
+		<li><a href="#">Disclaimer</a></li>
+
+	</ul>
+</nav>
+<section class="mainContainer">
+	<div class="sideBar">
+		<a href="GLQuiz.html"><img src="Media/gifs/GL%20logo.jpg"></a>
+	</div>
+	<div class="wrapper">
+		<div class="GLQuiz">
+			<!-- Batman Quiz-->
+			<div class="question1">
+				1. Who are the Green Lanterns?
+				<form>
+					<input type="radio" value="lawenforcement" name="GL1">: Interstellar Law Enforcement
+					<input type="radio" value="EMH" name="GL1">: Earth's Mighiest Heroes
+					<input type="radio" value="outlaws" name="GL1">: Intergalactic Outlaws
+				</form>
+				<button onclick="goToQ2()">Next</button>
+
+			</div>
+
+			<div class="question2">
+				2. Who was the first Green Lantern?
+				<form>
+					<input type="radio" value="haljordan" name="GL2">: Hal Jordan
+					<input type="radio" value="alanscott" name="GL2">: Alan Scott
+					<input type="radio" value="johnstewart" name="GL2">: John Stewart
+				</form>
+				<button onclick="goToQ3()">Next</button>
+
+			</div>
+
+			<div class="question3">
+				3. Which planet is the Green Lantern's headquarters on?
+				<form>
+					<input type="radio" value="oa" name="GL3">: Oa
+					<input type="radio" value="earth" name="GL3">: Earth
+					<input type="radio" value="rao" name="GL3">: Rao
+
+				</form>
+				<button onclick="goToQ4()">Next</button>
+
+			</div>
+			<div class="question4">
+
+				4. Which emotion do the Green Lanterns harness?
+				<form>
+
+					<input type="radio" value="willpower" name="GL4">: Willpower
+					<input type="radio" name="GL4" value="avarice">:Avarice
+					<input type="radio" name="GL4" value="compassion">: Compassion
+
+				</form>
+				<button onclick="goToQ5()">Next</button>
+
+			</div>
+			<div class="question5">
+
+				5.Who is one the Green Lantern's arch-nemesis?
+				<form>
+
+					<input type="radio" value="sinestro" name="GL5">: Sinestro
+					<input type="radio" value="oneaboveall" name="GL5">: The One Above All
+					<input type="radio" value="drfate" name="GL5">: Dr Fate
+				</form>
+				<button onclick="endGLQuizMsg()">Next</button>
+			</div>
+
+			<div class="EndGL">
+				<section id="EndGLImages">
+					<p>This quiz about Green Lantern has ended. Your score is <span id="GLScore"></span> out of 5.
+
+						Would you like to try again?</p>
+					<div class="TA">
+						<img class="tryAgainImage" src="Media/gifs/GL%20try.gif">
+						<button class="tryAgain" onclick="window.location.href='GLQuiz.html'">Try Again</button>
+					</div>
+					<div class="VI">
+						<img class="Victory" src="Media/gifs/GL%20Victory.gif">
+						<button class='victory' onclick="window.location.href='Page2ChoosePlayer.html'">Choose Another Player</button>
+					</div>
+
+				</section>
+			</div>
+		</div>
+	</div>
+</section>
+
+<body>
+
+</body>

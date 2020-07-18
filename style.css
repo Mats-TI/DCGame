@@ -1,0 +1,204 @@
+/*minimum dimensions 743 x 365*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+@font-face {
+	src: url(Media/Merienda_One/MeriendaOne-Regular.ttf);
+	font-family: "meri"
+}
+
+body {
+	background-image: url(Media/gifs/JLMainBackground.jpg);
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	font-family: meri;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	font-family: meri;
+	color: red;
+}
+
+p {
+	text-align: center;
+	font-family: meri;
+	color: red;
+	border: solid;
+	margin: 5%;
+
+}
+
+.heading:hover {
+	text-decoration: underline;
+	text-decoration-line: red;
+}
+
+.mainLogo img {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.mainNav {
+	width: 100%;
+	background-color: white;
+	background-image: url(Media/gifs/MainDC.jpg);
+	background-size: cover;
+	height: 100px;
+	position: fixed;
+	z-index: 999;
+}
+
+.mainNav a {
+	color: white;
+	font-family: meri;
+}
+
+
+
+
+.wrapper {
+	width: 80%;
+	padding-top: 100px;
+	margin: 0 auto;
+
+}
+
+
+.introVid {
+	display: block;
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+button {
+	display: block;
+	margin: 0 auto;
+	font-family: meri;
+	margin-top: 10px;
+	height: 50px;
+	font-size: 15px;
+
+}
+
+.superhero1 {
+	width: 256px;
+	height: 100%;
+	padding-top: 5%;
+	margin: 0 auto;
+
+}
+
+.superhero2,
+.superhero3,
+.superhero4,
+.superhero5,
+.superhero6,
+.superhero7 {
+	width: 256px;
+	height: 100%;
+	padding-top: 5%;
+	margin: 0 auto;
+
+
+}
+
+a:hover {
+	color: red;
+}
+
+.superhero1 img:hover,
+.superhero2 img:hover,
+.superhero3 img:hover,
+.superhero4 img:hover,
+.superhero5 img:hover,
+.superhero6 img:hover,
+.superhero7 img:hover {
+	width: 300px;
+}
+
+
+@media only screen and (min-width:790px) {
+	.mainNav {
+		width: 100%;
+		background-color: white;
+		background-image: url(Media/gifs/MainDC.jpg);
+		transition: all 0.5s ease-in-out;
+		height: 50px;
+		position: fixed;
+		z-index: 999;
+
+	}
+
+	.row1 img,
+	.row2 img,
+	.row3 img {
+		height: 220px;
+	}
+
+	.row2 {
+		display: flex;
+		flex-flow: row;
+		margin-top: 35px;
+	}
+
+	.superhero3 {
+		width: auto;
+		height: 100%;
+	}
+
+	.row3 {
+		display: flex;
+		flex-flow: row;
+		margin-top: 35px;
+
+	}
+
+	html {
+		overflow-y: scroll;
+	}
+
+	.mainLogo img {
+		display: block;
+		width: 30%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.mainNav li {
+		display: inline-block;
+		padding-left: 50px;
+		line-height: 50px;
+		padding-left: 100px
+	}
+
+	.mainNav a {
+		color: white;
+	}
+
+	body {
+		background-image: url(Media/gifs/JLMainBackground.jpg);
+		background-size: contain;
+	}
+
+	h2 {
+		color: red;
+	}
+
+	.mainNav:hover {
+		height: 200px;
+		background-size: 100% 100%;
+	}
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Batman Quiz</title>
+	<script src="mainBatman.js"></script>
+	<link rel="stylesheet" href="mainBatman.css">
+</head>
+<nav class="mainNav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Page2ChoosePlayer.html">Choose Another Superhero</a></li>
+		<li><a href="#">How To Play</a></li>
+		<li><a href="#">Disclaimer</a></li>
+
+	</ul>
+</nav>
+<section class="mainContainer">
+	<div class="sideBar">
+		<a href="BatmanQuiz.html"><img src="Media/gifs/Batman%20logo.jpg"></a>
+	</div>
+	<div class="wrapper">
+		<div class="BatmanQuiz">
+			<!-- Batman Quiz-->
+			<div class="question1">
+				1.What is Batman's real name?
+				<form>
+					<input type="radio" value="jasonwayne" name="Batman1">: Jason Wayne
+					<input type="radio" value="brucewayne" name="Batman1">: Bruce Wayne
+					<input type="radio" value="thomaswayne" name="Batman1">: John Wayne
+				</form>
+				<button onclick="goToQ2()">Next</button>
+
+			</div>
+
+			<div class="question2">
+				2.Which city does Batman operate in?
+				<form>
+					<input type="radio" value="metropolis" name="Batman2">: Metropolis
+					<input type="radio" value="gothamcity" name="Batman2">: Gotham City
+					<input type="radio" value="starcity" name="Batman2">: Star City
+				</form>
+				<button onclick="goToQ3()">Next</button>
+
+			</div>
+
+			<div class="question3">
+				3. What is Batman's Car name?
+				<form>
+					<input type="radio" value="batmobile" name="Batman3">: Batmobile
+					<input type="radio" value="batmotor" name="Batman3">: Batmotor
+					<input type="radio" value="nightsparrow" name="Batman3">: Night Sparrow
+
+				</form>
+				<button onclick="goToQ4()">Next</button>
+
+			</div>
+			<div class="question4">
+
+				4. Who is Batman's butler?
+				<form>
+
+					<input type="radio" value="alfredpennyworth" name="Batman4">: Alfred Pennyworth
+					<input type="radio" name="Batman4" value="timothydrake">: Timothy Drake
+					<input type="radio" name="Batman4" value="damiantodd">: Damian Todd
+
+				</form>
+				<button onclick="goToQ5()">Next</button>
+
+			</div>
+			<div class="question5">
+
+				5.Who is Batman's arch-nemesis?
+				<form>
+
+					<input type="radio" value="drmanhattan" name="Batman5">: Dr Manhattan
+					<input type="radio" value="thejoker" name="Batman5">: The Joker
+					<input type="radio" value="drvictor" name="Batman5">: Dr Victor Von Doom
+				</form>
+				<button onclick="endBatmanQuizMsg()">Next</button>
+			</div>
+
+			<div class="EndBatman">
+				<section id="EndBatmanImages">
+					<p>This quiz about Batman has ended. Your score is <span id="BatmanScore"></span> out of 5.
+
+						Would you like to try again?</p>
+					<div class="TA">
+						<img class="tryAgainImage" src="Media/gifs/Batman%20Try%20Again.gif">
+						<button class="tryAgain" onclick="window.location.href='BatmanQuiz.html'">Try Again</button>
+					</div>
+					<div class="VI">
+						<img class="Victory" src="Media/gifs/Batman%20Victory.gif">
+						<button class='victory' onclick="window.location.href='Page2ChoosePlayer.html'">Choose Another Player</button>
+					</div>
+
+				</section>
+			</div>
+		</div>
+	</div>
+</section>
+
+<body>
+
+</body>
