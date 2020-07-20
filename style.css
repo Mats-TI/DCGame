@@ -18,10 +18,34 @@ body {
 	background-size: cover;
 }
 
+@keyframes Animation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 h2 {
 	text-align: center;
 	font-family: meri;
-	color: white;
+	color: wheat;
+	animation: Animation ease 10s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.fairUseP {
+	word-spacing: 10px;
+	margin-top: 100px;
+
+}
+
+span {
+	text-decoration: underline;
+	text-transform: uppercase;
 }
 
 .playing,
@@ -29,6 +53,9 @@ h2 {
 	text-align: left;
 	font-family: meri;
 	color: white;
+	animation: Animation ease 10s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 p {
@@ -38,6 +65,9 @@ p {
 	border: solid;
 	margin: 5%;
 	background-color: gray;
+	animation: Animation ease 10s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .heading:hover {
@@ -78,7 +108,7 @@ p {
 
 .introVid {
 	display: block;
-	width: 70%;
+	width: 100%;
 	height: auto;
 	margin: 0 auto;
 }
@@ -149,6 +179,13 @@ a:hover {
 		height: 220px;
 	}
 
+	.introVid {
+		display: block;
+		width: 70%;
+		height: auto;
+		margin: 0 auto;
+	}
+
 	.row2 {
 		display: flex;
 		flex-flow: row;
@@ -194,9 +231,6 @@ a:hover {
 		background-size: contain;
 	}
 
-	h2 {
-		color: red;
-	}
 
 	.mainNav:hover {
 		height: 200px;

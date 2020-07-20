@@ -199,7 +199,7 @@ button {
 
 p {
 	border: solid;
-	color: blue;
+	color: white;
 }
 
 @media only screen and (min-width:790px) {
@@ -210,6 +210,18 @@ p {
 		position: fixed;
 		z-index: 999;
 
+	}
+
+	p {
+		border: solid;
+		color: blue;
+	}
+
+	.VI button {
+		position: relative;
+		right: 225px;
+		bottom: 15px;
+		z-index: 1000;
 	}
 
 	.mainLogo img {

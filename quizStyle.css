@@ -183,10 +183,11 @@ body {
 
 .VI button {
 	position: relative;
-	right: 307px;
+	right: auto;
 	bottom: 50px;
 	z-index: 1000;
 }
+
 
 .sideBar a {
 	width: 100%;
@@ -232,7 +233,7 @@ p {
 
 	body {
 		background-image: url(Media/gifs/Superman%20Background.gif);
-		background-size: contain;
+		background-size: cover;
 	}
 
 	.sideBar {
@@ -241,5 +242,12 @@ p {
 		height: 50px;
 		z-index: 1000;
 		position: fixed;
+	}
+
+	.VI button {
+		position: relative;
+		right: 307px;
+		bottom: 50px;
+		z-index: 1000;
 	}
 }

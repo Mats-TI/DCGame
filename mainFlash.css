@@ -10,7 +10,7 @@
 
 body {
 	background-image: url(Media/gifs/Flash%20Background.gif);
-	background-size: contain;
+	background-size: auto;
 
 }
 
@@ -210,6 +210,13 @@ p {
 		position: fixed;
 		z-index: 999;
 
+	}
+
+	.VI button {
+		position: relative;
+		right: 225px;
+		bottom: 15px;
+		z-index: 1000;
 	}
 
 	.mainLogo img {
