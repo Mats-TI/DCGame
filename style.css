@@ -28,6 +28,17 @@ body {
 	}
 }
 
+.definition1 {
+	text-align: left;
+	font-family: meri;
+	color: white;
+	animation: Animation ease 10s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	font: 10px;
+
+}
+
 h2 {
 	text-align: center;
 	font-family: meri;
@@ -56,6 +67,10 @@ span {
 	animation: Animation ease 10s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+}
+
+.definition {
+	text-align: center;
 }
 
 p {
@@ -110,7 +125,8 @@ p {
 	display: block;
 	width: 100%;
 	height: auto;
-	margin: 0 auto;
+	margin: 5% auto;
+	border-radius: 0 0 50px;
 }
 
 
@@ -121,6 +137,10 @@ button {
 	margin-top: 10px;
 	height: 50px;
 	font-size: 15px;
+	border: groove;
+	border-radius: 10px;
+	background-color: deepskyblue;
+	border-color: aquamarine;
 
 }
 
@@ -160,6 +180,16 @@ a:hover {
 	width: 300px;
 }
 
+.superhero1 img,
+.superhero2 img,
+.superhero3 img,
+.superhero4 img,
+.superhero5 img,
+.superhero6 img,
+.superhero7 img {
+	border-radius: 50%
+}
+
 
 @media only screen and (min-width:790px) {
 	.mainNav {
@@ -173,6 +203,28 @@ a:hover {
 
 	}
 
+	.definition1 {
+		text-align: center;
+		font-family: meri;
+		color: white;
+		animation: Animation ease 10s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+		font-size: 20px;
+		margin-top: 1%;
+
+	}
+
+	.superhero1 img,
+	.superhero2 img,
+	.superhero3 img,
+	.superhero4 img,
+	.superhero5 img,
+	.superhero6 img,
+	.superhero7 img {
+		border-radius: 50%
+	}
+
 	.row1 img,
 	.row2 img,
 	.row3 img {
@@ -183,7 +235,7 @@ a:hover {
 		display: block;
 		width: 70%;
 		height: auto;
-		margin: 0 auto;
+		margin: 2% auto;
 	}
 
 	.row2 {
