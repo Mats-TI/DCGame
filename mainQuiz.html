@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Superman Quiz</title>
 	<link rel="stylesheet" href="quizStyle.css">
-	<script src="quiz-style.js"></script>
+	<!--<script src="quiz-style.js"></script>-->
+
+
 </head>
 
 <body>
@@ -27,9 +29,10 @@
 			<div class="supermanQuiz">
 				<!-- Superman Quiz-->
 				<div class="question1">
-					1.What is Superman's planet of Origin?
+					1.What is Superman's planet of origin?
 					<form>
-						<input type="radio" value="mars" name="Superman1">: Mars
+						<input type="radio" value="mars" name="Superman1">
+						<label>: Mars</label>
 						<input type="radio" value="krypton" name="Superman1">: Krypton
 						<input type="radio" value="asgard" name="Superman1">: Asgard
 					</form>
@@ -85,23 +88,28 @@
 				</div>
 
 				<div class="EndSuperman">
-					<section id="EndSupermanImages">
-						<p>This quiz about Superman has ended. Your score is <span id="SupermanScore"></span> out of 5.
+					<p>This quiz about Superman has ended. Your score is <span id="SupermanScore"></span> out of 5.
 
-							Would you like to try again?</p>
+						Would you like to try again?</p>
+					<a href="mainQuiz.html">
 						<div class="TA">
-							<img class="tryAgainImage" src="Media/gifs/Superman%20Try%20Again%20gif.gif">
-							<button class="tryAgain" onclick="window.location.href='mainQuiz.html'">Try Again</button>
+							<p>Try Again</p>
+							<!--<img class="tryAgainImage" src="Media/gifs/Superman%20Try%20Again%20gif.gif">
+							<!--<button class="tryAgain" onclick="window.location.href='mainQuiz.html'">Try Again</button>-->
 						</div>
+					</a>
+					<a href="Page2ChoosePlayer.html">
 						<div class="VI">
-							<img class="Victory" src="Media/gifs/Superman%20Victory%20gif.gif">
-							<button class='victory' onclick="window.location.href='Page2ChoosePlayer.html'">Choose Another Player</button>
+							<p>Another One!</p>
+							<!--<img class="Victory" src="Media/gifs/Superman%20Victory%20gif.gif">
+							<!--<button class='victory' onclick="window.location.href='Page2ChoosePlayer.html'">Choose Another Player</button>-->
 						</div>
-
-					</section>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+	<script src="supesStackedQuestions.js"></script>
+</body>
 
-</body></html>
+</html>

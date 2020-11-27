@@ -11,7 +11,17 @@
 body {
 	background-image: url(Media/gifs/GL%20back.jpg);
 	background-size: contain;
+	font-family: meri;
+	overflow: hidden;
+}
 
+@media only screen and (max-width:857px) {
+	body {
+		background-image: url(Media/gifs/GL%20back.jpg);
+		background-size: 250% 50%;
+		font-family: meri;
+		overflow: hidden;
+	}
 }
 
 .mainContainer {
@@ -33,7 +43,7 @@ body {
 .mainNav {
 	width: 100%;
 	background-color: white;
-	height: 90px;
+	height: 100px;
 	position: fixed;
 	z-index: 999;
 }
@@ -93,6 +103,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question2 form input {
@@ -111,7 +124,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
-
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question3 form input {
@@ -130,6 +145,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question4 form input {
@@ -148,6 +166,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question5 form input {
@@ -163,10 +184,14 @@ body {
 
 .EndGL {
 	visibility: hidden;
-	font-size: 25px;
+	font-size: 18px;
+	width: 90%;
+	margin: 0 auto;
 	color: beige;
-
-
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	text-align: center;
 }
 
 .Victory {
@@ -196,13 +221,37 @@ button {
 	font-family: meri;
 	color: yellow;
 	background-color: black;
+	border: 1px groove darkgreen;
+	cursor: pointer;
 }
 
-p {
-	border: solid;
+form {
+	display: grid;
+	grid-template-columns: 3% 97%;
 }
 
-@media only screen and (min-width:790px) {
+input {
+	margin: auto auto;
+}
+
+.TA p,
+.VI p {
+	margin: 5%;
+	background-color: black;
+	opacity: 0.9;
+	color: white;
+	text-align: center;
+	text-decoration-color: white;
+	text-decoration: underline
+}
+
+.GLQuiz div {
+	margin-top: 15%;
+}
+
+
+
+@media only screen and (min-width:858px) {
 	.mainNav {
 		width: 100%;
 		background-color: white;
@@ -210,6 +259,10 @@ p {
 		position: fixed;
 		z-index: 999;
 
+	}
+
+	.GLQuiz div {
+		margin-top: 4%;
 	}
 
 	.mainLogo img {
@@ -226,21 +279,85 @@ p {
 		padding-left: 100px
 	}
 
-	.mainNav a {
-		color: blue;
-
-	}
-
-	body {
-		background-image: url(Media/gifs/GL%20back.jpg);
-		background-size: cover;
-	}
-
 	.sideBar {
 		background-color: black;
 		width: 65px;
 		height: 50px;
 		z-index: 1000;
 		position: fixed;
+	}
+
+	.mainNav a {
+		color: blue;
+	}
+
+	.EndGL {
+		display: grid;
+		visibility: hidden;
+		font-size: 25px;
+		color: beige;
+		margin: 100px;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"score score"
+			"TA VI";
+		font-family: meri;
+		margin: auto;
+	}
+
+	.EndGL p {
+		grid-area: score;
+
+	}
+
+	.TA {
+		grid-area: TA;
+		width: 200px;
+		height: 200px;
+		background-image: url(Media/gifs/GL%20try%20again%20cover.png);
+		background-size: cover;
+		margin: auto auto;
+		border: 10px solid white;
+		border-radius: 10px;
+	}
+
+	.TA:hover {
+		background-image: url(Media/gifs/GL%20try.gif);
+	}
+
+	.TA p,
+	.VI p {
+		margin-top: 90%;
+		background-color: black;
+		text-align: center;
+		opacity: 0.9;
+		color: white;
+
+	}
+
+	.VI:hover {
+		background-image: url(Media/gifs/GL%20Victory.gif);
+
+	}
+
+	.VI {
+		grid-area: VI;
+		width: 200px;
+		height: 200px;
+		background-image: url(Media/gifs/GL%20VI%20cover.png);
+		margin: auto auto;
+		background-size: cover;
+		border: 10px solid white;
+		border-radius: 10px;
+	}
+
+	form {
+		display: grid;
+		grid-template-columns: 3% 97%;
+	}
+
+	input {
+		margin: auto auto;
 	}
 }

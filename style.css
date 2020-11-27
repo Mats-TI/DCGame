@@ -29,7 +29,7 @@ body {
 }
 
 .definition1 {
-	text-align: left;
+	text-align: center;
 	font-family: meri;
 	color: white;
 	animation: Animation ease 10s;
@@ -46,6 +46,7 @@ h2 {
 	animation: Animation ease 10s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+	margin-top: 4%;
 }
 
 .fairUseP {
@@ -117,7 +118,7 @@ p {
 	width: 80%;
 	padding-top: 100px;
 	margin: 0 auto;
-
+	margin-bottom: 4%;
 }
 
 
@@ -126,7 +127,7 @@ p {
 	width: 100%;
 	height: auto;
 	margin: 5% auto;
-	border-radius: 0 0 50px;
+	border-radius: 0px 0 50px;
 }
 
 
@@ -139,8 +140,10 @@ button {
 	font-size: 15px;
 	border: groove;
 	border-radius: 10px;
-	background-color: deepskyblue;
+	background-color: white;
 	border-color: aquamarine;
+	margin-bottom: 10%;
+
 
 }
 
@@ -167,7 +170,7 @@ button {
 }
 
 a:hover {
-	color: red;
+	color: navy;
 }
 
 .superhero1 img:hover,
@@ -191,7 +194,7 @@ a:hover {
 }
 
 
-@media only screen and (min-width:790px) {
+@media only screen and (min-width:858px) {
 	.mainNav {
 		width: 100%;
 		background-color: white;

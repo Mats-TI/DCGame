@@ -4,103 +4,105 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Flash Quiz</title>
-	<script src="mainFlash.js"></script>
+	<!--<script src="mainFlash.js"></script>-->
 	<link rel="stylesheet" href="mainFlash.css">
 </head>
-<nav class="mainNav">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="Page2ChoosePlayer.html">Choose Another Superhero</a></li>
-		<li><a href="howToPlay.html">How To Play</a></li>
-		<li><a href="fairUse.html">Disclaimer</a></li>
 
-	</ul>
-</nav>
-<section class="mainContainer">
-	<div class="sideBar">
-		<a href="FlashQuiz.html"><img src="Media/gifs/Flash%20logo.png"></a>
-	</div>
-	<div class="wrapper">
-		<div class="FlashQuiz">
-			<!-- Batman Quiz-->
-			<div class="question1">
-				1.What is The Flash's real name?
-				<form>
-					<input type="radio" value="barryallen" name="Flash1">: Barry Allen
-					<input type="radio" value="wallywest" name="Flash1">: Wally Allen
-					<input type="radio" value="jamesallen" name="Flash1">: James Allen
-				</form>
-				<button onclick="goToQ2()">Next</button>
+<body>
+	<nav class="mainNav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Page2ChoosePlayer.html">Choose Another Superhero</a></li>
+			<li><a href="howToPlay.html">How To Play</a></li>
+			<li><a href="fairUse.html">Disclaimer</a></li>
 
-			</div>
+		</ul>
+	</nav>
+	<section class="mainContainer">
+		<div class="sideBar">
+			<a href="FlashQuiz.html"><img src="Media/gifs/Flash%20logo.png"></a>
+		</div>
+		<div class="wrapper">
+			<div class="FlashQuiz">
+				<!-- Batman Quiz-->
+				<div class="question1">
+					1.What is The Flash's real name?
+					<form>
+						<input type="radio" value="barryallen" name="Flash1">: Barry Allen
+						<input type="radio" value="wallywest" name="Flash1">: Wally Allen
+						<input type="radio" value="jamesallen" name="Flash1">: James Allen
+					</form>
+					<button onclick="goToQ2()">Next</button>
 
-			<div class="question2">
-				2.What is The Flash's source of power?
-				<form>
-					<input type="radio" value="speedforce" name="Flash2">: Speed Force
-					<input type="radio" value="mirakurusuperserum" name="Flash2">: Mirakuru Super Serum
-					<input type="radio" value="superchargedtreadmill" name="Flash2">: Super Charged Treadmil
-				</form>
-				<button onclick="goToQ3()">Next</button>
+				</div>
 
-			</div>
+				<div class="question2">
+					2.What is The Flash's source of power?
+					<form>
+						<input type="radio" value="speedforce" name="Flash2">: Speed Force
+						<input type="radio" value="mirakurusuperserum" name="Flash2">: Mirakuru Super Serum
+						<input type="radio" value="superchargedtreadmill" name="Flash2">: Super Charged Treadmil
+					</form>
+					<button onclick="goToQ3()">Next</button>
 
-			<div class="question3">
-				3. Who is The Flash's love intrest?
-				<form>
-					<input type="radio" value="iriswest" name="Flash3">: Iris West
-					<input type="radio" value="jessequick" name="Flash3">: Jesse Quick
-					<input type="radio" value="rebeccasilver" name="Flash3">: Rebecca Silver
+				</div>
 
-				</form>
-				<button onclick="goToQ4()">Next</button>
+				<div class="question3">
+					3. Who is The Flash's love intrest?
+					<form>
+						<input type="radio" value="iriswest" name="Flash3">: Iris West
+						<input type="radio" value="jessequick" name="Flash3">: Jesse Quick
+						<input type="radio" value="rebeccasilver" name="Flash3">: Rebecca Silver
 
-			</div>
-			<div class="question4">
+					</form>
+					<button onclick="goToQ4()">Next</button>
 
-				4. Which city does The Flash operate in?
-				<form>
+				</div>
+				<div class="question4">
 
-					<input type="radio" value="starcity" name="Flash4">: Cental City
-					<input type="radio" name="Flash4" value="coastcity">: Coast City
-					<input type="radio" name="Flash4" value="fawcettcity">: Fawcett City
+					4. Which city does The Flash operate in?
+					<form>
 
-				</form>
-				<button onclick="goToQ5()">Next</button>
+						<input type="radio" value="starcity" name="Flash4">: Cental City
+						<input type="radio" name="Flash4" value="coastcity">: Coast City
+						<input type="radio" name="Flash4" value="fawcettcity">: Fawcett City
 
-			</div>
-			<div class="question5">
+					</form>
+					<button onclick="goToQ5()">Next</button>
 
-				5.Who is The Flash's arch-nemesis?
-				<form>
+				</div>
+				<div class="question5">
 
-					<input type="radio" value="thereverseflash" name="Flash5">: The Reverse Flash
-					<input type="radio" value="professorproton" name="Flash5">: Professor Proton
-					<input type="radio" value="drsilverman" name="Flash5">: Dr Silverman
-				</form>
-				<button onclick="endFlashQuizMsg()">Next</button>
-			</div>
+					5.Who is The Flash's arch-nemesis?
+					<form>
 
-			<div class="EndFlash">
-				<section id="EndFlashImages">
+						<input type="radio" value="thereverseflash" name="Flash5">: The Reverse Flash
+						<input type="radio" value="professorproton" name="Flash5">: Professor Proton
+						<input type="radio" value="drsilverman" name="Flash5">: Dr Silverman
+					</form>
+					<button onclick="endFlashQuizMsg()">Next</button>
+				</div>
+				<div class="EndFlash">
 					<p>This quiz about The Flash has ended. Your score is <span id="FlashScore"></span> out of 5.
 
 						Would you like to try again?</p>
-					<div class="TA">
-						<img class="tryAgainImage" src="Media/gifs/Flash%20Try%20Again.gif">
-						<button class="tryAgain" onclick="window.location.href='FlashQuiz.html'">Try Again</button>
-					</div>
-					<div class="VI">
-						<img class="Victory" src="Media/gifs/Flash%20Victory.gif">
-						<button class='victory' onclick="window.location.href='Page2ChoosePlayer.html'">Choose Another Player</button>
-					</div>
-
-				</section>
+					<a href="FlashQuiz.html">
+						<div class="TA">
+							<p>Try Again</p>
+							<!--<img class="tryAgainImage" src="Media/gifs/Flash%20Try%20Again.gif">
+						<button class="tryAgain" onclick="window.location.href='FlashQuiz.html'">Try Again</button>-->
+						</div>
+					</a>
+					<a href="Page2ChoosePlayer.html">
+						<div class="VI">
+							<p>Another one!</p>
+							<!--<img class="Victory" src="Media/gifs/Flash%20Victory.gif">
+						<button class='victory' onclick="window.location.href='Page2ChoosePlayer.html'">Choose Another Player</button>-->
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-<body>
-
+	</section>
+	<script src="flash.js"></script>
 </body>

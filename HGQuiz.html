@@ -7,100 +7,96 @@
 	<script src="mainHG.js"></script>
 	<link rel="stylesheet" href="mainHG.css">
 </head>
-<nav class="mainNav">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="Page2ChoosePlayer.html">Choose Another Superhero</a></li>
-		<li><a href="howToPlay.html">How To Play</a></li>
-		<li><a href="fairUse.html">Disclaimer</a></li>
 
-	</ul>
-</nav>
-<section class="mainContainer">
-	<div class="sideBar">
-		<a href="HGQuiz.html"><img src="Media/gifs/Hawkgirl%20Logo.jpg"></a>
-	</div>
-	<div class="wrapper">
-		<div class="HGQuiz">
+<body>
+	<nav class="mainNav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Page2ChoosePlayer.html">Choose Another Superhero</a></li>
+			<li><a href="howToPlay.html">How To Play</a></li>
+			<li><a href="fairUse.html">Disclaimer</a></li>
 
-			<div class="question1">
-				1. What is Hawkgirl's planet of origin?
-				<form>
-					<input type="radio" value="earth" name="HG1">: Earth
-					<input type="radio" value="thanagar" name="HG1">: Thanagar
-					<input type="radio" value="xandar" name="HG1">: Xandar
-				</form>
-				<button onclick="goToQ2()">Next</button>
+		</ul>
+	</nav>
+	<section class="mainContainer">
+		<div class="sideBar">
+			<a href="HGQuiz.html"><img src="Media/gifs/Hawkgirl%20Logo.jpg"></a>
+		</div>
+		<div class="wrapper">
+			<div class="HGQuiz">
 
-			</div>
+				<div class="question1">
+					1. What is Hawkgirl's planet of origin?
+					<form>
+						<input type="radio" value="earth" name="HG1">: Earth
+						<input type="radio" value="thanagar" name="HG1">: Thanagar
+						<input type="radio" value="xandar" name="HG1">: Xandar
+					</form>
+					<button onclick="goToQ2()">Next</button>
 
-			<div class="question2">
-				2. What is Hawkgirl's real name?
-				<form>
-					<input type="radio" value="shayerahol" name="HG2">: Shayera Hol
-					<input type="radio" value="sharitawol" name="HG2">: Sharita Wol
-					<input type="radio" value="shaalhall" name="HG2">: Sha'Al Hall
-				</form>
-				<button onclick="goToQ3()">Next</button>
+				</div>
 
-			</div>
+				<div class="question2">
+					2. What is Hawkgirl's real name?
+					<form>
+						<input type="radio" value="shayerahol" name="HG2">: Shayera Hol
+						<input type="radio" value="sharitawol" name="HG2">: Sharita Wol
+						<input type="radio" value="shaalhall" name="HG2">: Sha'Al Hall
+					</form>
+					<button onclick="goToQ3()">Next</button>
 
-			<div class="question3">
-				3. Which is Hawkgirl's primary weapon?
-				<form>
-					<input type="radio" value="mace" name="HG3">: The Mace
-					<input type="radio" value="hammer" name="HG3">: The Hammer
-					<input type="radio" value="sword" name="HG3">: The Sword
+				</div>
 
-				</form>
-				<button onclick="goToQ4()">Next</button>
+				<div class="question3">
+					3. Which is Hawkgirl's primary weapon?
+					<form>
+						<input type="radio" value="mace" name="HG3">: The Mace
+						<input type="radio" value="hammer" name="HG3">: The Hammer
+						<input type="radio" value="sword" name="HG3">: The Sword
 
-			</div>
-			<div class="question4">
+					</form>
+					<button onclick="goToQ4()">Next</button>
 
-				4. What is Hawkgirl's primary weapon made up of?
-				<form>
+				</div>
+				<div class="question4">
 
-					<input type="radio" value="nthmetal" name="HG4">: Nth Metal
-					<input type="radio" name="HG4" value="vibranium">:Vibranium
-					<input type="radio" name="HG4" value="uru">: Uru
+					4. What is Hawkgirl's primary weapon made up of?
+					<form>
 
-				</form>
-				<button onclick="goToQ5()">Next</button>
+						<input type="radio" value="nthmetal" name="HG4">: Nth Metal
+						<input type="radio" name="HG4" value="vibranium">:Vibranium
+						<input type="radio" name="HG4" value="uru">: Uru
 
-			</div>
-			<div class="question5">
+					</form>
+					<button onclick="goToQ5()">Next</button>
 
-				5.Who is Hawkgirl's nemesis?
-				<form>
+				</div>
+				<div class="question5">
 
-					<input type="radio" value="azazel" name="HG5">: Azazel
-					<input type="radio" value="tryggthesorcerer" name="HG5">: Trygg the Sorcerer
-					<input type="radio" value="clawofhorus" name="HG5">: The Claw of Horus
-				</form>
-				<button onclick="endHGQuizMsg()">Next</button>
-			</div>
+					5.Who is Hawkgirl's nemesis?
+					<form>
 
-			<div class="EndHG">
-				<section id="EndHGImages">
+						<input type="radio" value="azazel" name="HG5">: Azazel
+						<input type="radio" value="tryggthesorcerer" name="HG5">: Trygg the Sorcerer
+						<input type="radio" value="clawofhorus" name="HG5">: The Claw of Horus
+					</form>
+					<button onclick="endHGQuizMsg()">Next</button>
+				</div>
+
+				<div class="EndHG">
 					<p>This quiz about Hawkgirl has ended. Your score is <span id="HGScore"></span> out of 5.
 
 						Would you like to try again?</p>
 					<div class="TA">
-						<img class="tryAgainImage" src="Media/gifs/Hawkgirl%20Background.gif">
-						<button class="tryAgain" onclick="window.location.href='HGQuiz.html'">Try Again</button>
+						<p>Try Again</p>
 					</div>
 					<div class="VI">
-						<img class="Victory" src="Media/gifs/Hawkgirl%20Try%20again.gif">
-						<button class='victory' onclick="window.location.href='Page2ChoosePlayer.html'">Choose Another Player</button>
+						<p>Another one!</p>
 					</div>
 
-				</section>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-<body>
-
+	</section>
+	<script src="hawkgirl.js"></script>
 </body>

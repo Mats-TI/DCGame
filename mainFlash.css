@@ -10,8 +10,18 @@
 
 body {
 	background-image: url(Media/gifs/FlashWallpaper.jpg);
-	background-size: auto;
+	background-size: cover;
+	font-family: meri;
+	overflow: hidden;
+}
 
+@media only screen and (max-width:857px) {
+	body {
+		background-image: url(Media/gifs/FlashWallpaper.jpg);
+		background-size: 250% 50%;
+		font-family: meri;
+		overflow: hidden;
+	}
 }
 
 .mainContainer {
@@ -94,6 +104,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question2 form input {
@@ -112,6 +125,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question3 form input {
@@ -130,6 +146,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question4 form input {
@@ -148,6 +167,9 @@ body {
 	padding: 50px;
 	visibility: hidden;
 	color: beige;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question5 form input {
@@ -163,10 +185,14 @@ body {
 
 .EndFlash {
 	visibility: hidden;
-	font-size: 25px;
+	font-size: 18px;
+	width: 90%;
+	margin: 0 auto;
 	color: beige;
-
-
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	text-align: center;
 }
 
 .Victory {
@@ -194,15 +220,37 @@ body {
 
 button {
 	font-family: meri;
-	color: yellow;
+	color: darkblue;
+	border: 1px groove blue;
+	cursor: pointer;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 3% 97%;
+}
+
+input {
+	margin: auto auto;
+}
+
+.TA p,
+.VI p {
+	margin: 5%;
 	background-color: black;
+	opacity: 0.9;
+	color: white;
+	text-align: center;
+	text-decoration-color: white;
+	text-decoration: underline
 }
 
-p {
-	border: solid;
+.FlashQuiz div {
+	margin-top: 15%;
 }
 
-@media only screen and (min-width:790px) {
+
+@media only screen and (min-width:858px) {
 	.mainNav {
 		width: 100%;
 		background-color: white;
@@ -212,11 +260,8 @@ p {
 
 	}
 
-	.VI button {
-		position: relative;
-		right: 225px;
-		bottom: 15px;
-		z-index: 1000;
+	.FlashQuiz div {
+		margin-top: 4%;
 	}
 
 	.mainLogo img {
@@ -233,21 +278,85 @@ p {
 		padding-left: 100px
 	}
 
-	.mainNav a {
-		color: blue;
-
-	}
-
-	body {
-		background-image: url(Media/gifs/FlashWallpaper.jpg);
-		background-size: cover;
-	}
-
 	.sideBar {
 		background-color: black;
 		width: 65px;
 		height: 50px;
 		z-index: 1000;
 		position: fixed;
+	}
+
+	.mainNav a {
+		color: blue;
+	}
+
+	.EndFlash {
+		display: grid;
+		visibility: hidden;
+		font-size: 25px;
+		color: beige;
+		margin: 100px;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"score score"
+			"TA VI";
+		font-family: meri;
+		margin: auto;
+	}
+
+	.EndFlash p {
+		grid-area: score;
+
+	}
+
+	.TA {
+		grid-area: TA;
+		width: 200px;
+		height: 200px;
+		background-image: url(Media/gifs/Flash%20Try%20Again%20cover.png);
+		background-size: cover;
+		margin: auto auto;
+		border: 10px solid white;
+		border-radius: 10px;
+	}
+
+	.TA:hover {
+		background-image: url(Media/gifs/Flash%20Try%20Again.gif);
+	}
+
+	.TA p,
+	.VI p {
+		margin-top: 90%;
+		background-color: black;
+		text-align: center;
+		opacity: 0.9;
+		color: white;
+
+	}
+
+	.VI:hover {
+		background-image: url(Media/gifs/Flash%20Victory.gif);
+
+	}
+
+	.VI {
+		grid-area: VI;
+		width: 200px;
+		height: 200px;
+		background-image: url(Media/gifs/Flash%20Victory%20cover.png);
+		margin: auto auto;
+		background-size: cover;
+		border: 10px solid white;
+		border-radius: 10px;
+	}
+
+	form {
+		display: grid;
+		grid-template-columns: 3% 97%;
+	}
+
+	input {
+		margin: auto auto;
 	}
 }

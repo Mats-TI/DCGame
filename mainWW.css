@@ -10,8 +10,19 @@
 
 body {
 	background-image: url(Media/gifs/wonder-woman-logo-wallpapers-background-pictures-wonder-woman.jpg);
-	background-size: contain;
+	background-size: 100% 50%;
+	font-family: meri;
+	overflow: hidden;
 
+}
+
+@media only screen and (max-width:857px) {
+	body {
+		background-image: url(Media/gifs/wonder-woman-logo-wallpapers-background-pictures-wonder-woman.jpg);
+		background-size: 250% 50%;
+		font-family: meri;
+		overflow: hidden;
+	}
 }
 
 .mainContainer {
@@ -70,7 +81,7 @@ body {
 	font-size: 20px;
 	padding: 50px;
 	margin-top: 10px;
-	color: beige;
+	color: gold;
 	visibility: visible;
 	animation: fadeInAnimation ease 5s;
 	animation-iteration-count: 1;
@@ -93,7 +104,10 @@ body {
 	font-size: 20px;
 	padding: 50px;
 	visibility: hidden;
-	color: beige;
+	color: gold;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question2 form input {
@@ -111,7 +125,10 @@ body {
 	font-size: 20px;
 	padding: 50px;
 	visibility: hidden;
-	color: beige;
+	color: gold;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question3 form input {
@@ -129,7 +146,10 @@ body {
 	font-size: 20px;
 	padding: 50px;
 	visibility: hidden;
-	color: beige;
+	color: gold;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question4 form input {
@@ -147,7 +167,10 @@ body {
 	font-size: 20px;
 	padding: 50px;
 	visibility: hidden;
-	color: beige;
+	color: gold;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .question5 form input {
@@ -163,9 +186,14 @@ body {
 
 .EndWW {
 	visibility: hidden;
-	font-size: 25px;
-	color: yellow;
-
+	font-size: 18px;
+	width: 90%;
+	margin: 0 auto;
+	color: gold;
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	text-align: center;
 
 }
 
@@ -194,14 +222,36 @@ body {
 button {
 	font-family: meri;
 	color: gold;
-	background-color: gray;
+	background-color: black;
+	cursor: pointer;
 }
 
-p {
-	border: solid;
+form {
+	display: grid;
+	grid-template-columns: 3% 97%;
 }
 
-@media only screen and (min-width:790px) {
+input {
+	margin: auto auto;
+}
+
+.TA p,
+.VI p {
+	margin: 5%;
+	background-color: black;
+	opacity: 0.9;
+	color: gold;
+	text-align: center;
+	text-decoration-color: white;
+	text-decoration: underline
+}
+
+.WWQuiz div {
+	margin-top: 15%;
+}
+
+
+@media only screen and (min-width:858px) {
 	.mainNav {
 		width: 100%;
 		background-color: white;
@@ -209,6 +259,10 @@ p {
 		position: fixed;
 		z-index: 999;
 
+	}
+
+	.WWQuiz div {
+		margin-top: 4%;
 	}
 
 	.mainLogo img {
@@ -225,22 +279,85 @@ p {
 		padding-left: 100px
 	}
 
-	.mainNav a {
-		color: blue;
-
-	}
-
-	body {
-		background-image: url(Media/gifs/wonder-woman-logo-wallpapers-background-pictures-wonder-woman.jpg);
-		background-size: contain;
-	}
-
 	.sideBar {
 		background-color: black;
 		width: 65px;
 		height: 50px;
 		z-index: 1000;
 		position: fixed;
+	}
 
+	.mainNav a {
+		color: blue;
+	}
+
+	.EndWW {
+		display: grid;
+		visibility: hidden;
+		font-size: 25px;
+		color: gold;
+		margin: 100px;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"score score"
+			"TA VI";
+		font-family: meri;
+		margin: auto;
+	}
+
+	.EndWW p {
+		grid-area: score;
+
+	}
+
+	.TA {
+		grid-area: TA;
+		width: 200px;
+		height: 200px;
+		background-image: url(Media/gifs/WW%20try%20again%20cover.png);
+		background-size: cover;
+		margin: auto auto;
+		border: 10px solid gold;
+		border-radius: 10px;
+	}
+
+	.TA:hover {
+		background-image: url(Media/gifs/WW%20try%20again.gif);
+	}
+
+	.TA p,
+	.VI p {
+		margin-top: 90%;
+		background-color: black;
+		text-align: center;
+		opacity: 0.9;
+		color: white;
+
+	}
+
+	.VI:hover {
+		background-image: url(Media/gifs/WW%20victory.gif);
+
+	}
+
+	.VI {
+		grid-area: VI;
+		width: 200px;
+		height: 200px;
+		background-image: url(Media/gifs/WW%20victory%20cover.png);
+		margin: auto auto;
+		background-size: cover;
+		border: 10px solid gold;
+		border-radius: 10px;
+	}
+
+	form {
+		display: grid;
+		grid-template-columns: 3% 97%;
+	}
+
+	input {
+		margin: auto auto;
 	}
 }
